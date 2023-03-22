@@ -13,6 +13,9 @@ export default component$(() => {
         </li>
         <li class="spacer" aria-hidden="true"></li>
         <li>
+          <a class="link" href="/">Home</a>
+        </li>
+        <li>
           <a class="link" href="/projects">Projects</a>
         </li>
         <li>
