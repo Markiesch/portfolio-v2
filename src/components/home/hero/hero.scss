@@ -1,0 +1,32 @@
+.hero {
+  text-align: center;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subheading {
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
+}
+
+h1 {
+  font-size: 5rem;
+  max-width: 16ch;
+  line-height: 1;
+}
+
+p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgba(247, 247, 247, 0.8);
+  max-width: 60ch;
+  padding: 2rem 0;
+}
+
+.button {
+  margin: 0 .5rem;
+}

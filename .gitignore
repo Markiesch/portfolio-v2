@@ -1,0 +1,27 @@
+# Build
+/dist
+/lib
+/lib-types
+/server
+
+# Development
+node_modules
+
+# Cache
+.cache
+.mf
+tsconfig.tsbuildinfo
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor
+.idea
+
+# Yarn
+.yarn/*
+!.yarn/releases
