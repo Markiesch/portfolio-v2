@@ -16,3 +16,27 @@ body {
   background: #03000a;
   font-family: "Poppins", sans-serif;
 }
+
+svg path {
+  fill: currentColor;
+}
+
+.button {
+  background-color: rgba(247, 247, 247, 0.11);
+  border: 1px solid rgba(247, 247, 247, 0.11);
+  color: white;
+  text-decoration: none;
+  border-radius: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  line-height: 1;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+}
+
+.button.primary {
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+}
