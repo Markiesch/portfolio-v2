@@ -21,7 +21,7 @@ export default component$(({project}: ProjectCardProps) => {
         <h2>{project.name}</h2>
         <p>{project.description}</p>
         <a class="button" href={`/projects/${project.id}`}>
-          <span>Read more</span> <ArrowRightIcon/>
+          <span>View case study</span> <ArrowRightIcon/>
         </a>
       </div>
     </div>
