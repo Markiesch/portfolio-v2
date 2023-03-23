@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #03000a;
+  overflow-y: scroll;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+svg path {
+  fill: currentColor;
+}

@@ -16,9 +16,7 @@ export default component$((props: ProjectCardProps) => {
       <img src={`/projects/${props.image}`} alt="" />
       <div class="information">
         <h2>{props.name}</h2>
-        <p>
-          { props.description }
-        </p>
+        <p>{props.description}</p>
         <a class="button" href="/projects">
           <span>Read more</span> <ArrowRightIcon />
         </a>
