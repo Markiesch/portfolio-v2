@@ -1,10 +1,8 @@
+@use "./abstract/variables" as *;
+
 .hero {
   text-align: center;
-  background: linear-gradient(
-    360deg,
-    rgba(212, 153, 237, 0.08) 0%,
-    rgba(212, 153, 237, 0) 100%
-  );
+  background: $background-gradient;
   border-bottom: 1px solid rgba(247, 247, 247, 0.2);
   padding: 5rem 0;
 

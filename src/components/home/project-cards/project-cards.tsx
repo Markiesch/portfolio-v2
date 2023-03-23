@@ -13,9 +13,7 @@ export default component$(() => {
         {projects.map((project) => (
           <ProjectCard
             key={project.id}
-            name={project.name}
-            description={project.description}
-            image={project.image}
+            project={project}
           />
         ))}
       </div>

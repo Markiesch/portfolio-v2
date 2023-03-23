@@ -1,24 +1,27 @@
-import { component$, useStylesScoped$ } from "@builder.io/qwik";
+import {component$, useStylesScoped$} from "@builder.io/qwik";
 import styles from "./project-card.scss?inline";
 import ArrowRightIcon from "~/components/icons/arrow-right.icon";
 
 export type ProjectCardProps = {
-  name: string;
-  description: string;
-  image: string;
-};
+  project: {
+    name: string;
+    description: string;
+    image: string;
+    id: number;
+  }
+}
 
-export default component$((props: ProjectCardProps) => {
+export default component$(({project}: ProjectCardProps) => {
   useStylesScoped$(styles);
 
   return (
     <div class="project-card">
-      <img src={`/projects/${props.image}`} alt="" />
+      <img src={`/projects/${project.image}`} alt=""/>
       <div class="information">
-        <h2>{props.name}</h2>
-        <p>{props.description}</p>
-        <a class="button" href="/projects">
-          <span>Read more</span> <ArrowRightIcon />
+        <h2>{project.name}</h2>
+        <p>{project.description}</p>
+        <a class="button" href={`/projects/${project.id}`}>
+          <span>Read more</span> <ArrowRightIcon/>
         </a>
       </div>
     </div>
