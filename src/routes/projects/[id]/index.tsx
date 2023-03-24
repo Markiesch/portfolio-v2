@@ -19,7 +19,11 @@ export default component$(() => {
               <h1 class="gradient-text">{project.name}</h1>
               <p>{project.description}</p>
               <div>
-                <a href={project.websiteUrl} target="_blank" class="visit-link button primary">
+                <a
+                  href={project.websiteUrl}
+                  target="_blank"
+                  class="visit-link button primary"
+                >
                   Visit website <ArrowRightIcon />
                 </a>
                 <a href={project.githubLink} target="_blank" class="button ">

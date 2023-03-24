@@ -11,10 +11,7 @@ export default component$(() => {
     <div>
       <div class="cards">
         {projects.map((project) => (
-          <ProjectCard
-            key={project.id}
-            project={project}
-          />
+          <ProjectCard key={project.id} project={project} />
         ))}
       </div>
       <div class="link-container">

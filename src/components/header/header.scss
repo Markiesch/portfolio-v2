@@ -1,6 +1,14 @@
 header {
   align-items: center;
-  padding: 20px 70px 0;
+  padding: 1rem 0;
+  width: 90%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 35rem) {
+    .link {
+      display: none;
+    }
+  }
 
   .logo a {
     display: inline-block;

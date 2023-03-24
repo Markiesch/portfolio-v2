@@ -13,14 +13,6 @@ export default component$(() => {
           Got a project? Drop me a line if you want to work together on
           something exciting. Big or small. Mobile or web.
         </p>
-        <div>
-          <a href="mailto:marksmeel@gmail.com" class="button primary">
-            Mail me <ArrowRightIcon />
-          </a>
-          <a href="mailto:marksmeel@gmail.com" class="button">
-            LinkedIn
-          </a>
-        </div>
       </section>
       <section class="contact--section container">
         <form>

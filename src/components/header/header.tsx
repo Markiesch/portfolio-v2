@@ -9,7 +9,7 @@ export default component$(() => {
     <header class="header">
       <ul>
         <li class="logo">
-          <a href="/">Mark Schuurmans</a>
+          <a href="/">Mark.</a>
         </li>
         <li class="spacer" aria-hidden="true"></li>
         <li>

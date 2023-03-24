@@ -7,7 +7,7 @@ export default component$(() => {
   useStylesScoped$(styles);
 
   return (
-    <div class="hero">
+    <div class="hero container">
       <span class="subheading gradient-text">Design. Build. Improve.</span>
       <h1 class="gradient-text">I build websites your users will love</h1>
       <p>

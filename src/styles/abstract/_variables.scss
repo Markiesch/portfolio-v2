@@ -5,3 +5,6 @@ $background-gradient: linear-gradient(
   rgba(212, 153, 237, 0.08),
   rgba(212, 153, 237, 0)
 );
+
+$font-hero-heading: clamp(1.75rem, 0.7rem + 4.78vw, 5rem);
+$font-hero-subheading: clamp(0.88rem, 0.75rem + 0.55vw, 1.25rem);
