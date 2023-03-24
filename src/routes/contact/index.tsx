@@ -1,5 +1,4 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import ArrowRightIcon from "~/components/icons/arrow-right.icon";
 import styles from "../../styles/contact.scss?inline";
 
 export default component$(() => {
