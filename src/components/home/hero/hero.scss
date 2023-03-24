@@ -3,7 +3,7 @@
 .wrapper {
   min-height: 80vh;
   border-bottom: 1px solid rgba(247, 247, 247, 0.2);
-  background: linear-gradient(0deg, rgba(212, 153, 237, 0.05), rgba(212, 153, 237, 0));;
+  background: $background-gradient;
   display: flex;
   justify-content: center;
   align-items: center;
