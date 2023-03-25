@@ -1,4 +1,4 @@
-import {component$, useStylesScoped$} from "@builder.io/qwik";
+import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import styles from "./hero.scss?inline";
 import ArrowRightIcon from "~/components/icons/arrow-right.icon";
 import MailIcon from "~/components/icons/mail.icon";
@@ -18,10 +18,10 @@ export default component$(() => {
 
         <div>
           <a href="/projects" class="button primary">
-            <span>View projects</span> <ArrowRightIcon/>
+            <span>View projects</span> <ArrowRightIcon />
           </a>
           <a href="/contact" class="button">
-            <MailIcon/> <span>Contact</span>
+            <MailIcon /> <span>Contact</span>
           </a>
         </div>
       </div>

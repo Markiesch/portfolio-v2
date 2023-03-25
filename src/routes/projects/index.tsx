@@ -10,15 +10,15 @@ export default component$(() => {
     <>
       <section class="hero">
         <h1 class="gradient-text">Projects</h1>
-        <p>Here you will find a few projects I made in my free time, or while learning a new technology.</p>
+        <p>
+          Here you will find a few projects I made in my free time, or while
+          learning a new technology.
+        </p>
       </section>
       <section class="project-section container">
-        {
-          projects.map(project => (
-            <ProjectCard key={project.id} project={project} />
-          ))
-
-        }
+        {projects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
       </section>
     </>
   );
