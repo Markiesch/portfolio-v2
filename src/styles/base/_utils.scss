@@ -1,3 +1,5 @@
+@use "../abstract/mixins" as *;
+
 .container {
   max-width: 90rem;
   width: 90%;
@@ -12,17 +14,24 @@
 }
 
 .button {
-  background-color: rgba(247, 247, 247, 0.11);
-  border: 1px solid rgba(247, 247, 247, 0.11);
-  color: white;
-  text-decoration: none;
-  border-radius: 2rem;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  line-height: 1;
-  padding: 0.75rem 1.25rem;
+
+  font-size: 1rem;
   font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  padding: 0.75em 1.25em;
+  border-radius: 2rem;
+
+  color: white;
+  background-color: rgba(247, 247, 247, 0.11);
+  border: 1px solid rgba(247, 247, 247, 0.11);
+
+  @include tablet {
+    font-size: 0.875rem;
+  }
 }
 
 .button.primary {
