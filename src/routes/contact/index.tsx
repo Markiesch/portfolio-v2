@@ -1,5 +1,5 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import styles from "../../styles/contact.scss?inline";
+import styles from "../../styles/pages/_contact.scss?inline";
 
 export default component$(() => {
   useStylesScoped$(styles);
@@ -7,11 +7,13 @@ export default component$(() => {
   return (
     <>
       <section class="hero">
-        <h1 class="gradient-text">Contact me</h1>
-        <p>
-          Got a project? Drop me a line if you want to work together on
-          something exciting. Big or small. Mobile or web.
-        </p>
+        <div class="container">
+          <h1 class="gradient-text">Contact me</h1>
+          <p>
+            Got a project? Drop me a line if you want to work together on
+            something exciting. Big or small. Mobile or web.
+          </p>
+        </div>
       </section>
       <section class="contact--section container">
         <form>

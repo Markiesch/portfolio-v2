@@ -1,7 +1,6 @@
+@use "../../abstract/mixins" as *;
+
 .cards {
-  width: 90%;
-  max-width: 80rem;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;

@@ -1,4 +1,5 @@
 @use "../abstract/variables" as *;
+@use "../abstract/mixins" as *;
 
 .hero {
   background: $background-gradient;
@@ -9,16 +10,22 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    gap: 2rem;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: $font-heading;
     line-height: 1;
   }
 
   p {
+    font-size: $font-subheading;
     color: $clr-neutral-400;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     max-width: 60ch;
   }
 
@@ -31,5 +38,9 @@
     width: 100%;
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
+
+    @include mobile {
+      height: 15rem;
+    }
   }
 }

@@ -1,6 +1,6 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import { useLocation } from "@builder.io/qwik-city";
-import { projects } from "~/components/home/project-cards/projects";
+import { projects } from "~/data/projects";
 import styles from "../../../styles/pages/_project.scss?inline";
 import ArrowRightIcon from "~/components/icons/arrow-right.icon";
 

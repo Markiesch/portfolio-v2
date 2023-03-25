@@ -1,5 +1,5 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import styles from "../styles/components/footer.scss?inline";
+import styles from "../styles/layout/_footer.scss?inline";
 
 export default component$(() => {
   useStylesScoped$(styles);

@@ -1,12 +1,12 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import styles from "./header.scss?inline";
-import ArrowRightIcon from "~/components/icons/arrow-right.icon";
+import styles from "../styles/layout/_header.scss?inline";
+import ArrowRightIcon from "./icons/arrow-right.icon";
 
 export default component$(() => {
   useStylesScoped$(styles);
 
   return (
-    <header class="header">
+    <header class="header container">
       <ul>
         <li class="logo">
           <a href="/">Mark.</a>

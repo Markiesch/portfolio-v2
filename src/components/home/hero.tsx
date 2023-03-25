@@ -1,5 +1,5 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import styles from "./hero.scss?inline";
+import styles from "../../styles/layout/home/_hero.scss?inline";
 import ArrowRightIcon from "~/components/icons/arrow-right.icon";
 import MailIcon from "~/components/icons/mail.icon";
 

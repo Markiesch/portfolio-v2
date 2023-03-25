@@ -1,4 +1,4 @@
-@use "./abstract/variables" as *;
+@use "../abstract/variables" as *;
 
 .hero {
   text-align: center;
@@ -7,13 +7,14 @@
   padding: 5rem 0;
 
   h1 {
-    font-size: 4rem;
+    font-size: $font-heading;
+    padding-bottom: 0.25em;
   }
 
   p {
     color: rgba(247, 247, 247, 0.8);
     max-width: 60ch;
-    margin: 1.5rem auto;
+    margin: 0 auto;
   }
 }
 
