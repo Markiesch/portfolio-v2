@@ -5,6 +5,7 @@ import {
   ServiceWorkerRegister,
 } from "@builder.io/qwik-city";
 import { RouterHead } from "./components/router-head/router-head";
+import { QwikPartytown } from "./components/partytown/partytown";
 
 import "./styles/base/_reset.scss";
 import "./styles/base/_utils.scss";
@@ -12,6 +13,21 @@ import "./styles/base/_utils.scss";
 export default component$(() => (
   <QwikCityProvider>
     <head>
+      <QwikPartytown forward={["gtag", "dataLayer.push"]} />
+      <script
+        async
+        type="text/partytown"
+        src="https://www.googletagmanager.com/gtag/js?id=G-RJ40M1T28M"
+      />
+      <script
+        type="text/partytown"
+        dangerouslySetInnerHTML={`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-RJ40M1T28M');`}
+      />
+
       <title>Mark Schuurmans - Portfolio</title>
       <meta name="author" content="Mark Schuurmans" />
       <meta
