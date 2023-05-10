@@ -8,7 +8,7 @@ export default component$(() => {
   useStylesScoped$(styles);
 
   return (
-    <div class="container">
+    <div>
       <div class="cards">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />

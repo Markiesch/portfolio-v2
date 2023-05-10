@@ -1,10 +1,17 @@
 $clr-neutral-400: rgba(247, 247, 247, 0.8);
 
+$background-color: rgba(212, 153, 237, 0.05);
+
 $background-gradient: linear-gradient(
   360deg,
-  rgba(212, 153, 237, 0.05),
+  $background-color,
   rgba(212, 153, 237, 0)
 );
+
+$border-color: rgba(247, 247, 247, 0.2);
+
+$color-title: rgba(255, 255, 255, 0.9);
+$color-text-muted: rgba(255, 255, 255, 0.8);
 
 $font-hero-heading: clamp(1.75rem, 0.7rem + 4.78vw, 5rem);
 $font-hero-subheading: clamp(0.88rem, 0.75rem + 0.55vw, 1.25rem);

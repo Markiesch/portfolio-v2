@@ -1,32 +1,73 @@
+@use "../../styles/abstract/variables" as *;
+@use "../../styles/abstract/mixins" as *;
+
+.project-card:nth-of-type(2n) {
+  flex-direction: row-reverse;
+
+  .information {
+    padding-left: 5rem;
+    padding-right: 0;
+  }
+}
+
 .project-card {
   color: white;
-  border-radius: 1rem;
-  border: 1px solid rgba(247, 247, 247, 0.11);
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+
+  & > div {
+    flex: 1 1 40rem;
+  }
+
+  .image--container {
+    border-radius: 1rem;
+    overflow: hidden;
+  }
 
   img {
     width: 100%;
-    max-height: 20rem;
+    height: 100%;
     object-fit: cover;
-    border-radius: 1rem 1rem 0 0;
-    opacity: 0.4;
-    transition: opacity 600ms ease-in-out;
   }
 
-  &:hover img {
-    opacity: 1;
+  .information {
+    padding-right: 5rem;
   }
-}
 
-.information {
-  padding: 2.5rem;
-}
+  .year {
+    font-size: 1.1rem;
+    font-family: Consolas, sans-serif;
+    padding-bottom: 1rem;
+  }
 
-h2 {
-  font-size: 1.75rem;
-}
+  h2 {
+    font-size: 2.75rem;
+    color: $color-title;
+    line-height: 1.2;
+  }
 
-p {
-  padding: 1rem 0;
-  font-weight: 300;
-  line-height: 1.8;
+  .description {
+    line-height: 1.6;
+    color: $color-text-muted;
+    padding: 1rem 0 2rem 0;
+    max-width: 60ch;
+  }
+
+  .button + .button {
+    margin-left: 1rem;
+  }
+
+  @include tablet {
+    flex-direction: column !important;
+    align-items: start;
+
+    .information {
+      padding: 0 0 5rem 0 !important;
+    }
+
+    & > div {
+      flex: initial;
+    }
+  }
 }

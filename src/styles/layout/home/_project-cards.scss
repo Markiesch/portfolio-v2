@@ -1,15 +1,5 @@
 @use "../../abstract/mixins" as *;
 
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  
-  @media screen and (max-width: 45rem) {
-    grid-template-columns: 1fr;
-  }
-}
-
 .link-container {
   padding: 2rem 0;
   display: flex;
