@@ -3,6 +3,7 @@
 .container {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 
   & > div {
     flex: 1 1 30rem;
@@ -28,9 +29,73 @@ p {
   }
 }
 
+.technologies {
+  position: relative;
+  overflow: hidden;
+  height: 20rem;
+
+  &::before,
+  &::after,
+  {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 5rem;
+    z-index: 1;
+  }
+
+  &::before {
+    background: linear-gradient(#03000a, transparent);
+    top: 0;
+  }
+
+  &::after {
+    background: linear-gradient(transparent, #03000a);
+    bottom: 0;
+  }
+}
+
+@keyframes left-to-right {
+  from {
+    transform: translateX(-250%);
+  }
+
+  to {
+    transform: translateX(50%);
+  }
+}
+
+@keyframes top-bottom {
+  from {
+    top: 100%;
+    transform: translateY(100%);
+  }
+  to {
+    top: 0;
+    transform: translateY(-100%);
+  }
+}
+
+.icon--animation {
+  animation: 1s top-bottom infinite linear;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 8rem;
+  height: 8rem;
+}
+
 .icon--container {
-  width: 6rem;
-  height: 6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: 1ms left-to-right infinite ease-out;
+  animation-duration: inherit;
+  animation-delay: inherit;
+
   background-color: rgba(white, 0.1);
   border: 1px solid rgba(white, 0.1);
   display: flex;
@@ -39,7 +104,7 @@ p {
   justify-content: center;
 
   svg {
-    width: 3.5rem;
+    width: 5rem;
   }
 
   svg path,

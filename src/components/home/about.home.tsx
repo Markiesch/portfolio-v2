@@ -41,10 +41,17 @@ export default component$(() => {
           </a>
         </div>
       </div>
-      <div>
+      <div class="technologies">
         {technologies.map((icon, index) => (
-          <div class="icon--container" key={index}>
-            {icon}
+          <div
+            class="icon--animation"
+            style={{
+              "animation-delay": `${index * 3}s`,
+              "animation-duration": `${technologies.length * 3}s`,
+            }}
+            key={index}
+          >
+            <div class="icon--container">{icon}</div>
           </div>
         ))}
       </div>
