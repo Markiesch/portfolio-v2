@@ -14,6 +14,6 @@ export type PartytownProps = PartytownConfig;
  * @public
  * You can pass setting with props
  */
-export const QwikPartytown = (props: PartytownProps): any => {
+export const QwikPartytown = (props: PartytownProps) => {
   return <script dangerouslySetInnerHTML={partytownSnippet(props)} />;
 };
