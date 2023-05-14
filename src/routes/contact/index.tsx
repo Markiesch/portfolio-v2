@@ -2,6 +2,9 @@ import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import { Form, routeAction$, z, zod$ } from "@builder.io/qwik-city";
 import styles from "../../styles/pages/_contact.scss?inline";
 import axios from "axios";
+import { GithubIcon } from "~/components/icons/github.icon";
+import { LinkedinIcon } from "~/components/icons/linkedin.icon";
+import { MailIcon } from "~/components/icons/mail.icon";
 
 export const useSendMail = routeAction$(
   async (data, requestEvent) => {
@@ -62,8 +65,6 @@ export default component$(() => {
       </section>
       <section class="contact--section container">
         <Form action={action}>
-          <h2>Quick contact</h2>
-
           <label for="name">Name</label>
           <input name="name" id="name" type="text" />
           <p class="error-message">{action.value?.fieldErrors?.name}</p>
@@ -80,14 +81,19 @@ export default component$(() => {
             Send
           </button>
         </Form>
-        <div>
-          <p style="color: white">{action.value?.toString()}</p>
-
-          <p>
-            {action.value?.failed && (
-              <span>{action.value.fieldErrors?.message}</span>
-            )}
-          </p>
+        <div class="socials--container">
+          <a href="mailto:marksmeel@gmail.com">
+            {MailIcon} marksmeel@gmail.com
+          </a>
+          <a href="https://github.com/Markiesch" target="_blank">
+            {GithubIcon} Github
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mark-schuurmans-30329a1b7/"
+            target="_blank"
+          >
+            {LinkedinIcon} LinkedIn
+          </a>
         </div>
       </section>
     </>

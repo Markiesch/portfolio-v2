@@ -2,11 +2,11 @@ import styles from "../../styles/layout/home/_about.scss?inline";
 import type { JSXChildren } from "@builder.io/qwik";
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
 import ArrowRightIcon from "~/components/icons/arrow-right.icon";
-import MailIcon from "~/components/icons/mail.icon";
 import { typescriptIcon } from "~/components/icons/typescript.icon";
 import { javaIcon } from "~/components/icons/java.icon";
 import { nestjsIcon } from "~/components/icons/nestjs.icon";
 import { vueJSIcon } from "~/components/icons/vuejs.icon";
+import { MailIcon } from "~/components/icons/mail.icon";
 
 export default component$(() => {
   useStylesScoped$(styles);
@@ -34,7 +34,7 @@ export default component$(() => {
         </p>
         <div class="cta">
           <a class="button primary" href="/contact">
-            Contact <MailIcon />
+            Contact {MailIcon}
           </a>
           <a class="button" href="/contact">
             Resume <ArrowRightIcon />
