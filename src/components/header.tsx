@@ -7,11 +7,12 @@ export default component$(() => {
 
   return (
     <header class="header container">
+      <div>
+        <a class="logo" href="/">
+          Mark.
+        </a>
+      </div>
       <ul>
-        <li class="logo">
-          <a href="/">Mark.</a>
-        </li>
-        <li class="spacer" aria-hidden="true"></li>
         <li>
           <a class="link" href="/">
             Home
@@ -27,14 +28,14 @@ export default component$(() => {
             Resume
           </a>
         </li>
-        <li class="spacer" aria-hidden="true"></li>
-        <li>
-          <a class="button" href="/contact">
-            <span>Contact</span>
-            <ArrowRightIcon />
-          </a>
-        </li>
       </ul>
+
+      <div class="contact-button--container">
+        <a class="button" href="/contact">
+          <span>Contact</span>
+          <ArrowRightIcon />
+        </a>
+      </div>
     </header>
   );
 });
