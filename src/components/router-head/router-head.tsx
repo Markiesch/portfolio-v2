@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { useDocumentHead, useLocation } from "@builder.io/qwik-city";
+import { FontRouterHead } from "~/components/router-head/font.router-head";
 
 /**
  * The RouterHead component is placed inside of the document `<head>` element.
@@ -14,6 +15,8 @@ export const RouterHead = component$(() => {
 
       <link rel="canonical" href={loc.url.href} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      {FontRouterHead}
 
       {head.meta.map((m) => (
         <meta key={m.key} {...m} />
