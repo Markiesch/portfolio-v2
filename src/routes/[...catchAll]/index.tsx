@@ -1,22 +1,21 @@
-import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import styles from "../../styles/pages/_404.scss?inline";
+import { component$ } from "@builder.io/qwik";
 
 export default component$(() => {
-  useStylesScoped$(styles);
-
   return (
-    <div class="container">
-      <span>Something went wrong...</span>
-      <h1 class="section--title">Oops! We couldn't find that page.</h1>
-      <p class="text-body subtitle">Maybe you can find what you need here?</p>
-      <div class="link-container">
-        <a class="button primary" href="/">
+    <div class="flex flex-col items-center justify-center min-h-[60vh]">
+      <span class="text-lg mb-4">Something went wrong...</span>
+      <h1 class="text-5xl font-bold">Oops! We couldn't find that page.</h1>
+      <p class="underline text-xl pt-4 pb-8">
+        Maybe you can find what you need here?
+      </p>
+      <div class="flex">
+        <a class="button" href="/">
           Home
         </a>
-        <a class="button" href="/portfolio">
+        <a class="ml-2 button" href="/portfolio">
           Projects
         </a>
-        <a class="button" href="/contact">
+        <a class="ml-2 button" href="/contact">
           Contact
         </a>
       </div>

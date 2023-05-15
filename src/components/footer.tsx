@@ -1,14 +1,9 @@
-import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import styles from "../styles/layout/_footer.scss?inline";
+import { component$ } from "@builder.io/qwik";
 
 export default component$(() => {
-  useStylesScoped$(styles);
-
   return (
-    <div class="wrapper">
-      <footer class="container">
-        <p>&copy; 2023 Mark Schuurmans</p>
-      </footer>
-    </div>
+    <footer class="container mt-20 py-8 border-t border-divider">
+      <p>&copy; 2023 Mark Schuurmans</p>
+    </footer>
   );
 });

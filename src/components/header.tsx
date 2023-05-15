@@ -1,38 +1,36 @@
-import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import styles from "../styles/layout/_header.scss?inline";
+import { component$ } from "@builder.io/qwik";
 import ArrowRightIcon from "./icons/arrow-right.icon";
 
+type Link = {
+  label: string;
+  href: string;
+};
+
 export default component$(() => {
-  useStylesScoped$(styles);
+  const links: Link[] = [
+    { label: "Home", href: "/" },
+    { label: "Projects", href: "/projects" },
+    { label: "Resume", href: "/resume" },
+  ];
 
   return (
-    <header class="header container">
-      <div>
-        <a class="logo" href="/">
-          Mark.
-        </a>
-      </div>
-      <ul>
-        <li>
-          <a class="link" href="/">
-            Home
-          </a>
-        </li>
-        <li>
-          <a class="link" href="/projects">
-            Projects
-          </a>
-        </li>
-        <li>
-          <a class="link" href="/resume">
-            Resume
-          </a>
-        </li>
+    <header class="container grid grid-cols-3 py-4 items-center">
+      <a class="logo inline-block font-bold" href="/">
+        Mark.
+      </a>
+      <ul class="flex items-center justify-center">
+        {links.map((link) => (
+          <li key={link.label}>
+            <a class="py-2 px-4" href={link.href}>
+              {link.label}
+            </a>
+          </li>
+        ))}
       </ul>
 
-      <div class="contact-button--container">
+      <div class="flex justify-end">
         <a class="button" href="/contact">
-          <span>Contact</span>
+          Contact
           <ArrowRightIcon />
         </a>
       </div>

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --border-color: rgba(247, 247, 247, 0.2);
+  --background-accent: rgba(212, 153, 237, 0.05);
+
+  --foreground-muted: rgba(247, 247, 247, 0.9);
+}
+
+body {
+  background-color: black;
+}
+
+svg,
+path {
+  fill: currentColor;
+}

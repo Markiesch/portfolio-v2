@@ -13,7 +13,7 @@ export default component$(() => {
   return (
     <>
       {project && (
-        <div class="hero">
+        <div>
           <div class="container">
             <div>
               <h1 class="gradient-text">{project.name}</h1>

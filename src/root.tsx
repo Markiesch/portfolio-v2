@@ -11,6 +11,8 @@ import "./styles/base/_fonts.scss";
 import "./styles/base/_reset.scss";
 import "./styles/base/_utils.scss";
 
+import "./global.css";
+
 export default component$(() => (
   <QwikCityProvider>
     <head>
@@ -71,7 +73,7 @@ export default component$(() => (
 
       <RouterHead />
     </head>
-    <body lang="en">
+    <body class="text-white" lang="en">
       <RouterOutlet />
       <ServiceWorkerRegister />
     </body>
