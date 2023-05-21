@@ -1,3 +1,5 @@
+@use "./fonts";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,8 +11,13 @@
   --foreground-muted: rgba(247, 247, 247, 0.9);
 }
 
+html {
+  color-scheme: dark;
+}
+
 body {
-  background-color: black;
+  background-color: #03000a;
+  overflow-y: scroll;
 }
 
 svg,

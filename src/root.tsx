@@ -7,11 +7,9 @@ import {
 import { RouterHead } from "./components/router-head/router-head";
 import { QwikPartytown } from "./components/partytown/partytown";
 
-import "./styles/base/_fonts.scss";
-import "./styles/base/_reset.scss";
 import "./styles/base/_utils.scss";
 
-import "./global.css";
+import "./styles/global.scss";
 
 export default component$(() => (
   <QwikCityProvider>
