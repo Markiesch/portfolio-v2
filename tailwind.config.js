@@ -8,6 +8,7 @@ module.exports = {
         "sans": "Poppins, Helvetica, Arial, sans-serif"
       },
       colors: {
+        "body": "var(--body)",
         "divider": "var(--border-color)",
         "background-accent": "var(--background-accent)",
         "foreground-muted": "var(--foreground-muted)"

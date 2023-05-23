@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 :root {
+  --body: #03000a;
   --border-color: rgba(247, 247, 247, 0.2);
   --background-accent: rgba(212, 153, 237, 0.05);
 
@@ -16,7 +17,7 @@ html {
 }
 
 body {
-  background-color: #03000a;
+  background-color: var(--body);
   overflow-y: scroll;
 }
 

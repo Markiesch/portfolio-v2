@@ -6,6 +6,8 @@ import { javaIcon } from "~/components/icons/java.icon";
 import { nestjsIcon } from "~/components/icons/nestjs.icon";
 import { vueJSIcon } from "~/components/icons/vuejs.icon";
 import { MailIcon } from "~/components/icons/mail.icon";
+import { psqlIcon } from "~/components/icons/psql.icon";
+import { nodejsIcon } from "~/components/icons/nodejs.icon";
 
 export default component$(() => {
   const technologies: JSXChildren[] = [
@@ -13,10 +15,12 @@ export default component$(() => {
     javaIcon,
     nestjsIcon,
     vueJSIcon,
+    psqlIcon,
+    nodejsIcon,
   ];
 
   return (
-    <div class="container grid grid-cols-2">
+    <div class="container grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
         <p class="font-mono text-lg gradient-text">About me</p>
         <h2 class="text-4xl pb-4 pt-2 font-semibold">Hey! I'm Mark,</h2>
@@ -38,9 +42,12 @@ export default component$(() => {
           </a>
         </div>
       </div>
-      <div class="h-min technologies grid grid-cols-4 divide-x divide-divider divide-y-reverse">
+      <div class="technologies grid grid-cols-3 gap-[1px] items-center bg-divider lg:w-[80%] lg:justify-self-end">
         {technologies.map((icon, index) => (
-          <div key={index}>
+          <div
+            key={index}
+            class="bg-body h-full flex items-center justify-center"
+          >
             <div class="py-4 w-1/3 mx-auto opacity-60">{icon}</div>
           </div>
         ))}
